@@ -30,3 +30,4 @@ mask will be = 0100
 
 most significant bit mask = num & -num
 
+Mathametical application in coding =sieveOfErotoSthenes, GCD, 
