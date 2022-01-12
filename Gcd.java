@@ -2,7 +2,7 @@
 
 class Gcd {
     public static void main(String[] args){
-        int x = gcd(12,15);
+        int x = gcd(15,12);
         System.out.print(x);
     }
 
