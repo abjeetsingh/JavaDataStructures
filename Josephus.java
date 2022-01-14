@@ -2,6 +2,13 @@ import java.util.Scanner;
 
 class josephus{
 
+    int arr[];
+    public static int josephus(int n,int k){
+       if (n==1)
+            return 0;
+        return (josephus(n-1, k) +k)%n;
+    }
+
     public static void main(String[] args){
         int k,n;
         System.out.println("Enter the number of people");
@@ -9,13 +16,7 @@ class josephus{
         n = scn.nextInt();
         System.out.println("Enter the number of people after which we should shoot");
         k = scn.nextInt();
-        int arr[] = new int[n];
-
-        for (int i=0; i<n;++i)
-            arr[i]=i;
-
-        for(int t:arr){
-            System.out.println(t);
-        }
+        int temp = josephus(n, k);
+        System.out.println(temp);
     }
 }
