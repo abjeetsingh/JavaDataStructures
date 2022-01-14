@@ -34,6 +34,6 @@ public class DuplicateEle2{
                 arr[i] = temp;
             }
             getAns(arr);
-
+            scn.close();
         }
 }

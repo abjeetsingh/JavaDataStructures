@@ -10,5 +10,6 @@ public class BitEvenOdd{
             System.out.println(num1 +"is even");
         else
             System.out.println(num1 + "is odd");
+        scn.close();
     }
 }

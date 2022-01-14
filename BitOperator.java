@@ -15,6 +15,6 @@ public class BitOperator{
         a = (byte)(a^b);
 
         System.out.println(a +"\t"+ b);
-
+        scn.close();
     }
 }

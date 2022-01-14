@@ -23,5 +23,6 @@ public class DuplicateEle{
         byte ans = Duplicate(num);
 
         System.out.println("the answer is" + ans);
+        scn.close();
     }
 }

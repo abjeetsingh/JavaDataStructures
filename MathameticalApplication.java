@@ -13,7 +13,7 @@ class MathameticalApplication{
         for(byte i=0;i<=n;++i){
             arr[i] = i;
         }
-
+        scn.close();
         sieveOfErotoStenes(arr, n);
     }
 
