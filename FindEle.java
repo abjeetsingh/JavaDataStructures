@@ -12,22 +12,24 @@ public class FindEle{
                 n = scn.nextInt();
                 a[i] = n;
             }
+        for(int i:a)
+            System.out.print(i + "\t");
+
         int pos = scn.nextInt();
-        int ans = maxarr(0,a,pos);
-        System.out.println(ans);
+        int ans = eleArr(0,a,pos);
+        System.out.println("\n\n The first occurance of " + pos + " is at = " + (ans+1) );
+        scn.close();
     }
 
-    public static int maxarr(int idx,int a[],int pos)
+    public static int eleArr(int idx,int a[],int pos)
     {
         if(idx >= a.length)
-            return 0;
-        
-        int max = maxarr(idx+1,a,pos);
+            return -1;
 
-        if (max == pos)
+        if ( a[idx]== pos)
             return idx;
         else
-            return max;
+            return eleArr(idx+1, a, pos);
         
     }
 }
