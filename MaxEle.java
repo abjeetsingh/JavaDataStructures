@@ -15,6 +15,7 @@ public class MaxEle{
         
         int ans = maxarr(a, 0);
         System.out.println(ans);
+        scn.close();
     }
 
     public static int maxarr(int a[], int idx){
