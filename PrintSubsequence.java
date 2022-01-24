@@ -5,7 +5,7 @@ class PrintSubsequence{
         Scanner scn =  new Scanner(System.in);
         String str= scn.nextLine();
         printSequence(str, "");
-
+        scn.close();
     }
 
     public static void printSequence(String str, String toAdd){
