@@ -13,6 +13,7 @@ class substring{
         for (String item:list){
             System.out.print( "\t"+item);
         }
+        scn.close();
     }
 
     public static ArrayList<String> getSubstring(String str){
