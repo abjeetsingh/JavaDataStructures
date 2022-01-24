@@ -17,5 +17,6 @@ class ReverseString{
         n = s.length();
         String ans = reverseingString(s, n-1);
         System.out.println(ans);
+        scn.close();
     }
 }
