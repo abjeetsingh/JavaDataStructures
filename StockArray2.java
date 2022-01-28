@@ -7,7 +7,7 @@ class StockArray2{
     }
 
     public static int maxProfit(int arr[]){
-        int minRn = arr[0], profit = 0;
+        int profit = 0;
         for(int i=1; i<arr.length; ++i)
             if(arr[i]>arr[i-1])
                 profit += arr[i]-arr[i-1];
