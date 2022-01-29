@@ -12,7 +12,7 @@ class StockArray3{
             minEle = Math.min(minEle, arr[i]);
             maxELe = Math.max(maxELe, arr[i]);
         }
-        return 
+        return  x
     }
 
     public static int maxProfit(int arr[]){
