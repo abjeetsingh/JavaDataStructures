@@ -1,3 +1,5 @@
+// Rotation Program
+
 import java.util.*;
 class TestClass {
     public static void main(String args[] ) throws Exception {
@@ -27,5 +29,6 @@ class TestClass {
             }
 
         }
+        scn.close();
     }
 }
