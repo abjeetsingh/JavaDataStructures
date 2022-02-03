@@ -32,6 +32,9 @@ class MakeStack{
         }
     
         public void display(){
+            for(int i=0;i<=top;++i){
+                System.out.println(arr[i]);
+            }
         }
     
         public  int size(){
