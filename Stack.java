@@ -29,15 +29,9 @@ class MakeStack{
             arr[top] = 0;
             top--;
             return(temp);
-
-            
-
         }
     
         public void display(){
-            for(int i=0;i<=top;++i){
-                System.out.println(arr[i]);
-            }
         }
     
         public  int size(){
@@ -46,9 +40,5 @@ class MakeStack{
     
     }
 
-    public static void main(String[] args) {
-        Stack Stk = new Stack(2);
-        Stk.push(10);
-        Stk.display();
-    }
+
 }
