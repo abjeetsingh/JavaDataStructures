@@ -40,8 +40,26 @@ class MakeStack{
         public  int size(){
             return top +1;
         }
+
+        public int peak(){
+            return top;
+        }
+
+        public static void main(String[] args) {
+            
+        }
     
     }
 
+    public static void main(String[] args) {
+        Stack stk = new Stack(2);
+        stk.push(1);
+        stk.size();
+        stk.push(2);
+        stk.size();
+        stk.push(3);
+        stk.size();
+
+    }
 
 }
