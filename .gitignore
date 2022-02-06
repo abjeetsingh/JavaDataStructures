@@ -27,3 +27,5 @@ TestClass.class
 ShortestPattern.class
 MakeStack$Stack.class
 MakeStack.class
+StartGraph$Edge.class
+StartGraph.class
