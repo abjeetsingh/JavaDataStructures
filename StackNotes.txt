@@ -1,0 +1,9 @@
+stack can be used when one elemt is only to be chaeck by the previous elements and tou want to operate operations like mergers or any other operation requiring run through the previous elements, the doctor problem i solved earlier was bassed on stack aswell
+
+stack has three main functions.. the push the pop and peak
+
+peak enables you to view the elemnt on the stack
+push enables you to enter more elements hence giving the stack ability to grow itself and being dynamic 
+pop removes the element on the top and you can do this multiple tymes until a condition is hit to stop it.
+
+stacks are used in overflow problems, or problems that need to decide what to do in the next step based on teh previous values
