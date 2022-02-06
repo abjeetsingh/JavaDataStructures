@@ -45,9 +45,7 @@ class StartGraph{
         graph[0].add(new Edge(6, 5, 3));
         graph[0].add(new Edge(6, 4, 8));
         
-        for (ArrayList a:graph)
-        for (Edge edg: a)
-            System.out.println(edg);
+        
     }
     
 }
