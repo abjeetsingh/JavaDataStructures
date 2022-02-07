@@ -29,3 +29,9 @@ MakeStack$Stack.class
 MakeStack.class
 StartGraph$Edge.class
 StartGraph.class
+
+AllPathGraph$Edge.class
+AllPathGraph.class
+BFT$Edge.class
+BFT$Pair.class
+BFT.class
