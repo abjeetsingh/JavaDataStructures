@@ -35,3 +35,5 @@ AllPathGraph.class
 BFT$Edge.class
 BFT$Pair.class
 BFT.class
+
+HasPathSelf$Edge.class
