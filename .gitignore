@@ -37,3 +37,5 @@ BFT$Pair.class
 BFT.class
 
 HasPathSelf$Edge.class
+
+HasPathSelf.class
