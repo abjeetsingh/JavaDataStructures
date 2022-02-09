@@ -43,8 +43,7 @@ public class HasPath {
       System.out.println(pathExists);
     }
     
-    public static boolean hasPath(ArrayList<Edge>[] graph,  
-                                  boolean[] visited, int src, int dest){
+    public static boolean hasPath(ArrayList<Edge>[] graph,boolean[] visited, int src, int dest){
         if(src == dest){
             return true;
         }
