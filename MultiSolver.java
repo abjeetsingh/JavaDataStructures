@@ -1,7 +1,7 @@
 import java.nio.file.Path;
 import java.util.PriorityQueue;
 import java.util.Scanner;
-import java.*;
+import java.lang.*;
 class MultiSolver{
     class Edge{
         int src;
@@ -34,10 +34,10 @@ class MultiSolver{
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        int noVert = scn.nextInt();
-        ArrayList<Edge>[] graph = new ArrayList();
+        int noVert = Integer.parseInt(scn.nextline());
+        ArrayList<Edge>[] graph = new ArrayList[noVert];
         for(int i=0; i < noVert; ++i)
-            graph[i] = new ArrayList<Edge>();
+            graph[i] = new ArrayList<>();
         int noEdge = scn.nextInt();
         for(int i=0; i<noEdge; ++i){
             String[] edgeDetail = scn.nextLine().split(" ");
@@ -58,16 +58,16 @@ class MultiSolver{
     }
 
     static String spath;
-    static int spathwt = Integer.MAX_VALUE();
+    static Integer spathwt = Integer.MAX_VALUE();
 
     static String lpath;
-    static int lpathwt = Integer.MIN_VALUE();
+    static Integer lpathwt = Integer.MIN_VALUE();
 
     static String cpath;
-    static int cpathwt = Integer.MAX_VALUE();
+    static Integer cpathwt = Integer.MAX_VALUE();
 
     static String fpath;
-    static int fpathwt = Integer.MIN_VALUE();
+    static Integer fpathwt = Integer.MIN_VALUE();
 
     static PriorityQueue<Pair> pq = new PriorityQueue<>();
 
