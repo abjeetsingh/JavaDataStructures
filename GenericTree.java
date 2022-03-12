@@ -19,6 +19,16 @@ class GenericTree{
             display(child);
     }
 
+    public static int TreeSize(Node recievedNode){
+        int s = 0;
+        for (Node child:recievedNode.children){
+            int cs = TreeSize(child);
+            s += cs;
+        }
+        s += 1;
+        return s;
+    }
+
     public static void main(String[] args) {
         int[] arr = {10,20,50,-1,60,-1,-1,30,70,-1,80,110,-1,120,-1,-1,90,-1,-1,40,100,-1,-1,-1};
         Stack<Node> stac = new Stack<>();
@@ -45,6 +55,10 @@ class GenericTree{
 
         // Display Generic Tree
         display(root);
-    
+
+        //Size of tree
+
+        int size = TreeSize(root);
+        System.out.println(size);
     }
 }
