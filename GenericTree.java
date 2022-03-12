@@ -3,15 +3,28 @@ import java.util.Stack;
 
 class GenericTree{
 
-    class Node{
+    public static class Node{
         int data;
         ArrayList<Node> children= new ArrayList<>();
     }
 
+    public static void display(Node recievedNode){
+        String str = recievedNode.data + " --> ";
+        for (Node child: recievedNode.children)
+            str += child.data + ", ";
+        str += ".";
+        System.out.println(str);
+
+        for(Node child: recievedNode.children) 
+            display(child);
+    }
+
     public static void main(String[] args) {
-        int[] arr = {10,20,50,-1,60-1,-1,30,70,-1,80,110,-1,120,-1,-1,90,-1,-1,40,100,-1,-1,-1};
-        Stack<Node> stac = new stack<>();
-        Node root;
+        int[] arr = {10,20,50,-1,60,-1,-1,30,70,-1,80,110,-1,120,-1,-1,90,-1,-1,40,100,-1,-1,-1};
+        Stack<Node> stac = new Stack<>();
+        Node root = null;
+
+        // Generic Tree Constructor
         for(int i:arr){
             if(i == -1)
                 stac.pop();
@@ -23,11 +36,15 @@ class GenericTree{
                     stac.peek().children.add(t);
                 else
                     root = t;
+
                 stac.push(t);
             }
             
         }
-    
+        // Generic Tree Constructor
+
+        // Display Generic Tree
+        display(root);
     
     }
 }
