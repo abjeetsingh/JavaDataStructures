@@ -29,6 +29,18 @@ class GenericTree{
         return s;
     }
 
+    public static int MaximumInTree(Node recievedNode){
+        int max = Integer.MIN_VALUE;
+
+        for (Node child: recievedNode.children)
+            max = Math.max(max,MaximumInTree(child));
+            
+        max = Math.max(max,recievedNode.data);
+
+
+        return max;
+    }
+
     public static void main(String[] args) {
         int[] arr = {10,20,50,-1,60,-1,-1,30,70,-1,80,110,-1,120,-1,-1,90,-1,-1,40,100,-1,-1,-1};
         Stack<Node> stac = new Stack<>();
@@ -60,5 +72,10 @@ class GenericTree{
 
         int size = TreeSize(root);
         System.out.println(size);
+
+        int maximum = MaximumInTree(root);
+        System.out.println(maximum);
+
+        System.out.println(root.data);
     }
 }
