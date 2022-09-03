@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-class NGETR{
+public class NGETR{
     public static void main(String[] args) {
         ArrayList<Integer> arr = new ArrayList<Integer>(){{
             add(2);add(5);add(9);add(3);add(1);add(12);add(6);add(8);add(7);}};
