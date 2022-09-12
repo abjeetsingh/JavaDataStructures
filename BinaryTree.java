@@ -29,6 +29,13 @@ class BinaryTree{
         System.out.println(root.data);
         inorderTraversal(root.left);
     }
+
+    static void preorderTraversal(Node root){
+        if(root == null) return;
+        System.out.println(root.data);
+        inorderTraversal(root.left);
+        inorderTraversal(root.left);
+    }
 }
 
 class Node{
