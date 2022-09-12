@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 class BinaryTree{
@@ -69,6 +71,21 @@ class BinaryTree{
         if(l==null || r == null) return false;
         
         return (l.data == r.data) && isSymmetric(l.left,r.right) && isSymmetric(l.right,r.left);
+    }
+
+
+    static void levelOrderTraversal(Node root){
+        Queue<Node> que = new LinkedList<Node>();
+        que.add(root);
+
+        while(!que.isEmpty()){
+            Node curr =  que.poll();
+            System.out.println(curr.data);
+            if(curr.left!=null)
+                que.add(curr.left);
+            if(curr.right!=null)
+                que.add(curr.right);
+        }
     }
 }
 
