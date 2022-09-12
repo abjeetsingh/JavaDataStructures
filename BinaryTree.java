@@ -36,6 +36,13 @@ class BinaryTree{
         inorderTraversal(root.left);
         inorderTraversal(root.left);
     }
+
+    static void postorderTraversal(Node root){
+        if(root == null) return;
+        inorderTraversal(root.left);
+        inorderTraversal(root.left);
+        System.out.println(root.data);
+    }
 }
 
 class Node{
