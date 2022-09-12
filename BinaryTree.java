@@ -77,9 +77,16 @@ class BinaryTree{
     static void levelOrderTraversal(Node root){
         Queue<Node> que = new LinkedList<Node>();
         que.add(root);
-
+        que.add(null);
         while(!que.isEmpty()){
             Node curr =  que.poll();
+            // the if block is for proper next line representation. 
+            if(curr == null){
+                if(que.isEmpty()) return;
+                que.add(null);
+                System.err.println();
+                continue;
+            }
             System.out.println(curr.data);
             if(curr.left!=null)
                 que.add(curr.left);
