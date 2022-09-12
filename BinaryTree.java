@@ -43,6 +43,14 @@ class BinaryTree{
         inorderTraversal(root.left);
         System.out.println(root.data);
     }
+    static int height(Node root){
+        if(root == null) return 0;
+        return Math.max(height(root.left),height(root.right)) + 1;
+    }
+    static int numNodes(Node root){
+        if(root == null) return 0;
+        return numNodes(root.left) + numNodes(root.right) + 1;
+    }
 }
 
 class Node{
