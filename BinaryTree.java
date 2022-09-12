@@ -14,10 +14,10 @@ class BinaryTree{
         if(data == -1) return null;
 
         root = new Node(data);
-        System.out.println("Enter the left value of"+  root.data);
+        System.out.println("Enter the left value of -> "+  root.data);
         root.left = createTree();
 
-        System.out.println("Enter the left value of"+  root.data);
+        System.out.println("Enter the right value of -> "+  root.data);
         root.right = createTree();
 
         return root;
