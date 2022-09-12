@@ -51,6 +51,12 @@ class BinaryTree{
         if(root == null) return 0;
         return numNodes(root.left) + numNodes(root.right) + 1;
     }
+
+    static int maxEle(Node root){
+        if(root == null) return Integer.MIN_VALUE;
+
+        return Math.max(root.data,Math.max(maxEle(root.left), maxEle(root.right)));
+    }
 }
 
 class Node{
