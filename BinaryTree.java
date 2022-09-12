@@ -62,6 +62,14 @@ class BinaryTree{
 
         return Math.min(root.data,Math.min(minEle(root.left), minEle(root.right)));
     }
+
+    static boolean isSymmetric(Node l, Node r){
+        if(l == null && r == null ) return true;
+        
+        if(l==null || r == null) return false;
+        
+        return (l.data == r.data) && isSymmetric(l.left,r.right) && isSymmetric(l.right,r.left);
+    }
 }
 
 class Node{
