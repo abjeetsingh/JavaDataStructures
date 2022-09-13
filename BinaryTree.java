@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 import java.util.Scanner;
 
@@ -94,6 +96,18 @@ class BinaryTree{
                 que.add(curr.right);
         }
     }
+
+    public static List<Integer> leftView(Node root){
+        List<Node> values = new ArrayList<Node>();
+        leftViewHelper(root, 0, values);
+        return values;
+
+    }
+
+    
+    
+    
+    
 }
 
 class Node{
