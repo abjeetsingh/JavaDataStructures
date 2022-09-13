@@ -118,6 +118,13 @@ class BinaryTree{
         return values;
         
     }
+    public void helper(TreeNode root, List<Integer> values, int levels){
+        if(root == null) return;
+        if(values.size() == levels) values.add(root.val);
+        
+        helper(root.right,values,levels+1);
+        helper(root.left,values,levels+1);
+    }
     
     
     
