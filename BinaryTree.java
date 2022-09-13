@@ -104,7 +104,13 @@ class BinaryTree{
 
     }
 
-    
+    public static void leftViewHelper(Node root, int level, List<Node> values){
+        if(root == null) return;
+        if(values.get(level) == null)
+            values.add(root);
+        leftViewHelper(root.left, level+1, values);
+        leftViewHelper(root.right, level+1, values);
+    }
     
     
     
