@@ -111,6 +111,13 @@ class BinaryTree{
         leftViewHelper(root.left, level+1, values);
         leftViewHelper(root.right, level+1, values);
     }
+
+    public List<Integer> rightSideView(TreeNode root) {
+        List<Integer> values = new ArrayList<>();
+        helper(root,values,0);
+        return values;
+        
+    }
     
     
     
