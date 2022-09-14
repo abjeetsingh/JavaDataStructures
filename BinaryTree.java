@@ -97,7 +97,7 @@ class BinaryTree{
         }
     }
 
-    public static List<Integer> leftView(Node root){
+    public static List<Node> leftView(Node root){
         List<Node> values = new ArrayList<Node>();
         leftViewHelper(root, 0, values);
         return values;
@@ -120,12 +120,14 @@ class BinaryTree{
     }
     public void helper(Node root, List<Integer> values, int levels){
         if(root == null) return;
-        if(values.size() == levels) values.add(root.val);
+        if(values.size() == levels) values.add(root.data);
         
         helper(root.right,values,levels+1);
         helper(root.left,values,levels+1);
     }
     
+
+    public void topView()
     
     
 }
